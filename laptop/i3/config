@@ -113,7 +113,7 @@ bindsym $mod+a focus parent
 set $ws1 "1: Main"
 set $ws2 "2: Communication"
 set $ws3 "3: Books"
-set $ws4 "4"
+set $ws4 "4: Games"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
@@ -125,6 +125,7 @@ assign [class="calibre"] $ws3
 assign [class="thunderbird"] $ws2
 assign [class="Slack"] $ws2
 assign [class="discord"] $ws2
+assign [class="steam"] $ws4
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -193,3 +194,8 @@ exec --no-startup-id nitrogen --restore
 bindsym $mod+x exec xscreensaver-command -lock
 exec --no-startup-id xscreensaver -no-splash
 exec --no-startup-id picom -CGb
+
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set 20+ # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 20- # decrease screen brightness
