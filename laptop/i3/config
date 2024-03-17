@@ -114,7 +114,7 @@ set $ws1 "1: Main"
 set $ws2 "2: Communication"
 set $ws3 "3: Books"
 set $ws4 "4: Games"
-set $ws5 "5"
+set $ws5 "5: Code"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -126,6 +126,7 @@ assign [class="thunderbird"] $ws2
 assign [class="Slack"] $ws2
 assign [class="discord"] $ws2
 assign [class="steam"] $ws4
+assign [class="Code"] $ws5
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -192,6 +193,7 @@ bar {
 }
 exec --no-startup-id nitrogen --restore
 bindsym $mod+x exec xscreensaver-command -lock
+# bindsym $mod+x exec i3lock --color 000000
 exec --no-startup-id xscreensaver -no-splash
 exec --no-startup-id picom -CGb
 
