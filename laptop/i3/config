@@ -202,6 +202,7 @@ exec --no-startup-id picom -CGb
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set 20+ # increase screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 20- # decrease screen brightness
 
+for_window [title="Netflix - Brave"] sticky enable
 for_window [title="Netflix - Mozilla Firefox"] sticky enable
 for_window [title="Picture-in_Picture"] sticky enable
 bindsym $mod+d sticky toggle
