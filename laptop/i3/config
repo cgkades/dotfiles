@@ -45,7 +45,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty -o font.size=6 
+#bindsym $mod+Return exec alacritty -o font.size=6 
+bindsym $mod+Return exec warp-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -201,8 +202,4 @@ exec --no-startup-id picom -CGb
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set 20+ # increase screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 20- # decrease screen brightness
-
-for_window [title="Netflix - Brave"] sticky enable
-for_window [title="Netflix - Mozilla Firefox"] sticky enable
-for_window [title="Picture-in_Picture"] sticky enable
 bindsym $mod+d sticky toggle
